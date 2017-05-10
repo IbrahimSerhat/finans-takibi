@@ -1,0 +1,23 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  breadcrumbs:
+    application:
+      root: "Anasayfa"
+    pages:
+      pages: "Sayfalar"
+  helpers:
+    actions: "Eylemler"
+    links:
+      back: "Geri"
+      cancel: "İptal"
+      confirm: "Emin misiniz?"
+      destroy: "Sil"
+      new: "Yeni"
+      edit: "Düzenle"
+    titles:
+      edit: "Düzenle"
+      save: "Kaydet"
+      new: "Yeni oluştur}"
+      delete: "Sil"
