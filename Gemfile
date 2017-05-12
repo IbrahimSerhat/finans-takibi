@@ -16,6 +16,9 @@ gem 'devise', '~> 4.2'
 gem 'devise-bootstrap-views'
 gem 'twitter-bootstrap-rails'
 
+# Stock
+gem 'stock_quote'
+
 # For localization
 gem 'rails-i18n'
 
@@ -44,6 +47,8 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
