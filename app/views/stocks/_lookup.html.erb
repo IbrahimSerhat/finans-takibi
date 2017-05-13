@@ -1,0 +1,24 @@
+<div class="stock-lookup">
+  <h3>Hisse Senedi Ara</h3>
+  <%= form_tag hisse_senedi_ara_path, remote: true, method: :get, id: 'stock-lookup-form' do %>
+    <div class="form-group row no-padding text-center col-md-12">
+      <div class="col-md-10">
+        <%= text_field_tag :stock, params[:stock], placeholder: 'Hisse senedi sembolü', autofocus: true,
+                                                 class: 'form-control search-box input-lg' %>
+      </div>
+      <div class="col-md-2">
+        <%= button_tag(type: :submit, class: 'btn btn-lg btn-success') do %>
+          <i class="fa fa-search"></i> Hisse senedine bak
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<% if @stock %>
+  <div id="stock-lookup-results" class="well results-block">
+    <strong>Symbol:</strong> <%= @stock.ticker %>
+    <strong>Name:</strong> <%= @stock.name %>
+    <strong>Price:</strong> <%= @stock.price %>
+  </div>
+<% end %>
